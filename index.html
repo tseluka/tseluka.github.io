@@ -261,15 +261,17 @@
 
     @media (max-width: 600px) {
       .container {
-        padding: 0 24px;
+        padding: 0 20px;
       }
 
       .banner {
-        height: 140px;
+        height: 100px;
       }
 
-      .pfp-container {
-        margin-top: -40px;
+      .profile-row {
+        margin-top: -35px;
+        gap: 12px;
+        flex-wrap: wrap;
       }
 
       .pfp {
@@ -278,7 +280,51 @@
       }
 
       .title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+      }
+
+      .subtitle {
+        font-size: 0.8rem;
+      }
+
+      .socials {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .social-link {
+        font-size: 0.85rem;
+      }
+
+      ul.tree {
+        padding: 12px;
+        overflow-x: auto;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      p, .tree-project, .project-desc {
+        font-size: 0.85rem;
+        word-break: break-word;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .profile-row {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+      }
+
+      .pfp {
+        margin: 0 auto;
+      }
+
+      .title-block {
+        align-items: center;
+        width: 100%;
       }
     }
   </style>
