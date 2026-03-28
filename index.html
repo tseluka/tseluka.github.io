@@ -197,6 +197,7 @@
     .tag-js { color: #f0db4f; }
     .tag-python { color: #4B8BBE; }
     .tag-rust { color: #ce9168; }
+    .tag-flutter { color: #02569B; }
 
     .tree-project::before {
       color: var(--accent);
@@ -232,20 +233,6 @@
       font-size: inherit;
       cursor: pointer;
       padding: 0;
-    }
-
-    .cursor {
-      display: inline-block;
-      width: 10px;
-      height: 20px;
-      background: var(--accent);
-      animation: blink 1s step-end infinite;
-      vertical-align: middle;
-      margin-left: 4px;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
     }
 
     .inspired {
@@ -342,7 +329,7 @@
         <img src="pfp.jpeg" alt="profile picture">
       </div>
       <div class="title-block">
-        <h1 class="title">tseluka0<span class="cursor"></span></h1>
+        <h1 class="title">tseluka0</h1>
         <span class="subtitle">software engineer & architect</span>
       </div>
     </div>
@@ -355,7 +342,7 @@
   <section id="blog">
     <h2>blog</h2>
     <ul class="incremental">
-          None yet.
+          none yet.
     </ul>
   </section>
 
@@ -366,6 +353,7 @@
         <span class="terminal-path">~/projects</span>
         <ul>
               <li class="tree-project"><a href="https://github.com/dzotsee21/remram" target="_blank">remram <span class="project-desc">- lightweight remote device controller</span> <span class="tag tag-go">go</span> <span class="tag tag-js">js</span></a></li>
+              <li class="tree-project"><a href="https://play.google.com/store/apps/details?id=com.lunaka.uplevel" target="_blank">uplevel <span class="project-desc">- "proof of work" gamified workout app</span> <span class="tag tag-flutter">dart(flutter)</span></a></li>
               <li class="tree-project"><a href="https://github.com/dzotsee21/pomodoro-cli" target="_blank">pomodoro-cli <span class="project-desc">- pomodoro timer in terminal</span> <span class="tag tag-go">go</span></a></li>
               <li class="tree-project"><a href="https://github.com/dzotsee21/shorvid-generator" target="_blank">shorvid-generator <span class="project-desc">- generate short AI video clips</span> <span class="tag tag-python">python</span></a></li>
               <li class="tree-project"><a href="https://github.com/dzotsee21/cgraph" target="_blank">cgraph <span class="project-desc">- github contributions display in terminal</span> <span class="tag tag-go">go</span></a></li>
