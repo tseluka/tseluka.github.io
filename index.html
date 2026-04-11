@@ -235,6 +235,10 @@
       padding: 0;
     }
 
+    button.social-link:hover {
+      color: var(--accent);
+    }
+
     .inspired {
       color: #444;
       font-size: 0.8rem;
@@ -339,6 +343,11 @@
     <p>i'm tseluka. i like reading manga, implementing new ideas in code and reverse engineering projects.</p>
   </section>
 
+  <section id="uses">
+    <h2>uses</h2>
+    <p id="uses-text">i use <button onclick="cycleUses()" class="social-link" id="uses-btn">[nvim]</button>, btw</p>
+  </section>
+
   <section id="blog">
     <h2>blog</h2>
     <ul class="incremental">
@@ -388,6 +397,14 @@
   </div>
 
   <script>
+    const usesList = ["nvim", "arch"];
+    let usesIndex = 0;
+
+    function cycleUses() {
+      usesIndex = (usesIndex + 1) % usesList.length;
+      document.getElementById("uses-btn").textContent = "[" + usesList[usesIndex] + "]";
+    }
+
     async function copyEmail() {
       const contentElement = document.getElementById("email");
       const text = contentElement.textContent;
